@@ -5,6 +5,8 @@ const Blockchain = require("./Blockchain");
 let bankChain = new Blockchain();
 
 //Add Blocks:
+console.log("Mining Block 1...");
+
 bankChain.addNewBlock(
   new Block(1, "20/12/2019", {
     account_id: "IK7YHVBGTYJKI78",
@@ -19,6 +21,8 @@ bankChain.addNewBlock(
   })
 );
 
+console.log("Mining Block 2...");
+
 bankChain.addNewBlock(
   new Block(2, "22/12/2019", {
     account_id: "IK8YHVBGTYJKI78",
@@ -32,6 +36,9 @@ bankChain.addNewBlock(
     active_loan: true
   })
 );
+
+console.log("Mining Block 3...");
+
 bankChain.addNewBlock(
   new Block(3, "24/12/2019", {
     account_id: "IUH76TVBGTYJKI78",
