@@ -21,9 +21,9 @@ class Blockchain {
 
   //! Verify the integrity of the blockchain:
   isChainValid() {
-    for (let i = 1; i < this.chain.length; i++) {
-      const currentBlock = this.chain[i];
-      const previousBlock = this.chain[i - 1];
+    for (let chainIndex = 1; chainIndex < this.chain.length; chainIndex++) {
+      const currentBlock = this.chain[chainIndex];
+      const previousBlock = this.chain[chainIndex - 1];
 
       if (currentBlock.hash !== currentBlock.calculateHash()) {
         return false;
