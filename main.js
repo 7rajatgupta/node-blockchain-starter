@@ -46,4 +46,5 @@ bankChain.addNewBlock(
   })
 );
 
+//console.log("Chain Valid ? " + bankChain.isChainValid()); //Verify the integrity of the chain.
 console.log(JSON.stringify(bankChain, null, 4));
